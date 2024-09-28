@@ -1,6 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_dashboard/widgets/header_widget.dart';
 
+import 'activity_details.card.dart';
+
 class DashboardWidget extends StatelessWidget {
   const DashboardWidget({super.key});
 
@@ -11,6 +13,8 @@ class DashboardWidget extends StatelessWidget {
         SizedBox(height: 18),
         // search bar
         HeaderWidget(),
+        SizedBox(height: 18),
+        ActivityDetailsCard(),
       ],
     );
   }
