@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_dashboard/widgets/side_menu_widget.dart';
 
 class MainScreen extends StatelessWidget {
   const MainScreen({super.key});
@@ -9,9 +10,11 @@ class MainScreen extends StatelessWidget {
       body: SafeArea(
         child: Row(
           children: [
-            Expanded(
+            const Expanded(
               flex: 2,
-              child: Container(color: Colors.red),
+              child: SizedBox(
+                child: SideMenuWidget(),
+              ),
             ),
             Expanded(
               flex: 7,
