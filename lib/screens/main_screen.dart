@@ -1,6 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_dashboard/widgets/side_menu_widget.dart';
 
+import '../widgets/dashboard_widget.dart';
+
 class MainScreen extends StatelessWidget {
   const MainScreen({super.key});
 
@@ -16,9 +18,9 @@ class MainScreen extends StatelessWidget {
                 child: SideMenuWidget(),
               ),
             ),
-            Expanded(
+            const Expanded(
               flex: 7,
-              child: Container(color: Colors.blue),
+              child: DashboardWidget(),
             ),
             Expanded(
               flex: 3,
